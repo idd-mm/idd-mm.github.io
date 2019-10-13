@@ -61,6 +61,33 @@ h4 {
     top: 30%;
 	right: 5%;
 }
+.main-menu a{
+	color: var(--bg-on-d);
+  	text-decoration: none;
+  	line-height: 2;
+  	display: block;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0em 1em;	
+}
+.main-menu {
+	display: none;
+	background-color: var(--bg);
+	width: 12em;
+	padding: 1em 0em;
+	border-bottom-right-radius: 1em;
+	border-top-left-radius: 1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+.hamburger-menu:hover .main-menu {
+	display: block;
+	margin-top: 2em;
+}
+ .hamburger-menu:hover button{
+	position: absolute;
+	top: 0;
+	right: 0;
+ }
 .search {
     position: absolute;
     top: 30%;
@@ -84,7 +111,6 @@ h4 {
 }
 
 /********* image & title *******/
-
 .idd-student img {width: 100%;}
 .idd-student {
 	position: relative;
@@ -273,6 +299,7 @@ a {
 }
 a:hover {transition: background-color 2s, color 1s; }
 .top-bar button:hover {color: var(--a);}
+.main-menu a:hover {color: var(--a);}
 .bottom-bar a:hover {color: var(--bg);} 
 
 
