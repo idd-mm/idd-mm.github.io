@@ -20,6 +20,7 @@ header, main, footer{
 	font-family: var(--sans);
 	line-height: 1.5em;
 }
+/**/
 main {
 	max-width: 80em;
     margin: 0 auto;
