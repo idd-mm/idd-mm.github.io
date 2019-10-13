@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400i,700|Open+Sans:400i,700&display=swap');
+
+html {
+  /* colors:*/
+	--bg: #FFFFFF;			   /* background color */
+	--bg-on-d: #1867A3;        /* dark */
+	--bg-on-l: #5C5C5C;        /* light */
+	--a: #8ABAE2;      /* links */
+	--sh: #cdd2d3;		       /* shadow */
+	--sh-t:  rgba(210, 216, 216, 0.205);  /* shadow transparent */
+	--h: #E1CA96; /* hover */
+  
+  /* fonts:*/
+  --sans: 'Open Sans', Arial, sans-serif;
+  --serif: 'Lora', Georgia, Times, serif;
+}
+
+/**** Apply fonts ****/
+header, main, footer{
+	font-family: var(--sans);
+	line-height: 1.5em;
+}
+main {
+	max-width: 80em;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {font-family: var(--serif);}
+
+/*********heading***********/
+h1 {
+	font-size: 2em;
+	text-align: left;
+}
+h2 {
+    color: var(--h);
+    font-size: 1.5em;
+    text-align: left;
+}
+h3 {
+    font-size: 1em;
+    text-align: left;
+}
+h4 {
+    font-size: 1em;
+	text-align: center;
+}
+
+/********* topbar *********/
+.top-bar {
+    background-color: var(--bg);
+    color: var(--bg-on-d); 
+    padding: 1em 0em;
+	position: fixed;
+    width: 100%;
+	top: 0;
+	z-index: 1;
+	box-shadow: 0 0 2em rgba(0,0,0,0.3);
+}
+.hamburger-menu {
+    position: absolute;
+    top: 30%;
+	right: 5%;
+}
+.search {
+    position: absolute;
+    top: 30%;
+    right: 12%;
+}
+.user-profile {
+	position: absolute;
+    top: 30%;
+    right: 20%;
+}
+.top-bar button {
+    border: none;
+    background-color: var(--bg);
+    color: var(--bg-on-d);
+}
+.logo img {
+	width: 15%;
+	position: relative;
+	left: 2%;
+	max-width: 4em;
+}
+
+
+/********* image & title *******/
+
+.idd-student img {width: 100%;}
+.idd-student {
+	position: relative;
+	margin-top: 21%;
+}
+.caption-idd {
+	background-color: var(--sh-t);
+	color: var(--bg);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	padding: 1em 3em;
+	font-size: 0.5em;
+  }
+ 
+/****** program's definition ********/
+.program-def {color: var(--sh);}
+.def {
+	background-color: var(--bg-on-d);
+	padding: 2em 3em;
+	text-align: justify;
+	text-justify: none;
+	font-size: 0.8em;
+} 
+.def h2 {padding-bottom: 0.8em;;}
+
+.program-detail dl {
+	background-color: var(--bg-on-d);
+	padding: 1em 0.5em;
+	border-bottom-left-radius: 1em;
+	border-top-right-radius: 1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+.program-detail dd {font-size: 0.8em;}
+
+.program-detail {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 0.5em;
+	grid-gap: 0.5em;
+	margin: 0 1.5em;
+}
+.one, .two, .three, .four, .five{text-align: center;}
+.three, .four, .five {grid-column: span 2;}
+.program-detail dt {
+	text-align: center;
+	font-family: var(--serif);
+	font-size: 1em;
+	color: var(--h);
+}
+
+/**** program outcomes ****/
+.outcomes {
+	margin-top: 1em;
+	padding-bottom: 1em;;
+	background-color: var(--bg);
+}
+.outcomes ol {
+	font-size: 0.8em;
+	list-style-type: square;
+	color: var(--bg-on-l);
+	padding: 1em 2em 1em 3em;
+	margin: 1em 3em 2em 3em;
+	background-color: var(--bg);
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+.outcomes li {padding: 0.2em;}
+.outcomes h4 {
+	padding: 1em 3em;
+	color: var(--h);
+	background-color: var(--bg-on-d);
+	border-bottom: dotted var(--h);
+}
+
+.softwares-list {
+	padding: 0em 0.5em 2em 1em;
+	margin: 1em 1.5em 0em 1.5em;
+}
+.softwares-list li{
+	text-align: left;
+	display: inline-block;
+	margin: 0.1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+	border-radius: 0.5em;
+}
+
+
+/**** career opportunities ****/
+.career h4{
+	padding: 1em 3em;
+	color: var(--h);
+	background-color: var(--bg-on-d);
+	border-bottom: dotted var(--h);
+	margin-bottom: 1em;
+}
+.career {
+	background-color: var(--bg);
+	padding-bottom: 1em;;
+}
+.career p, .career ul {
+	padding: 2em;
+	font-size: 0.8em;
+	background-color: var(--bg);
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+	color: var(--bg-on-l);
+	margin: 0em 3em;
+}
+
+.career ul {
+	padding-left: 10%;
+	list-style-type: square;
+}
+
+/****** alumni student ******/
+.alumni-student img {width: 100%;}
+.alumni-student {
+	position: relative;
+	margin-top: 2em;
+}
+.caption-alumni {
+	background-color: var(--sh-t);
+	color: var(--bg);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1em;
+	padding: 1em 3em;
+}
+.alumnis {display: inline-block;}
+.alumni-student-one {
+	padding: 2em;
+	margin: 1em 2.5em 3em 2.5em;
+	background-color: var(--bg-on-d);
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+.alumni-image {text-align: center;}
+.alumni-student-one p {
+	font-size: 0.8em;
+	color: var(--sh);
+}
+.alumni-student-one h4 {
+	color: var(--h);
+	text-align: left;
+	padding: 1em 0em;
+}
+
+/************* contact us *************/
+.contact-us h4{
+	background-color: var(--sh-t);
+	padding: 4% 7%;
+	color: var(--bg-on-d);
+	margin: 1em 0em;
+	
+}
+.contact-us-info {
+	margin: 0em 3em;
+	background-color: var(--sh-t);
+	padding: 5%;
+	font-size: 0.8em;
+	color: var(--bg-on-l);
+	text-align: center;
+}
+.contact-us-info-co-ordinator {padding-bottom: 1em;}
+
+/************* footer ***********/
+footer {
+	color: var(--bg);
+	font-size: 0.8em;
+    background-color: var(--bg-on-d);
+    padding: 1em;
+	text-align: center;
+	margin-top: 3em;
+	line-height: 2em;
+}
+.social-media li {
+    display: inline-block;
+	color: var(--bg);
+}
+
+
+/************** Hover ***********/
+a {
+    text-decoration: none;
+    color: var(--a);
+    margin: 0.8em;
+}
+a:hover {transition: background-color 2s, color 1s; }
+.top-bar button:hover {color: var(--a);}
+.bottom-bar a:hover {color: var(--bg);} 
+
+
+/************** Media ***********/
+
+@media screen and (min-width:350px) {
+	.top-bar {font-size: 1.2em;}
+}
+@media screen and (min-width:400px) {
+	.top-bar {font-size: 1.5em;}
+}
+@media screen and (min-width:420px) {
+	.idd-student {margin-top: 20%;}
+	.program-detail {
+		padding: 0.8em;
+	}
+	.three, .four {grid-column: span 1;}
+	.five {grid-column: span 2;}
+}
+@media screen and (min-width:540px) {
+	.idd-student {margin-top: 19%;}
+	.softwares-list {text-align: center;}
+}
+
+@media screen and (min-width:580px) {
+	.idd-student h1 {font-size: 2.5em;}
+	.bottom-bar {font-size: 75%;}
+	} 
+
+@media screen and (min-width:650px) {
+	.idd-student {margin-top: 18%;}
+	.idd-student h1 {font-size: 3em;}
+	.contact-us-info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+	 }
+	 .contact-us-info a {
+		text-align: center;
+		grid-column: span 2;
+	 }
+	 .contact-us-info-co-ordinator {padding-top: 10%;}
+	}
+
+@media screen and (min-width:750px) {
+	.idd-student {margin-top: 17%;}
+    .bottom-bar {font-size: 85%;}
+	.program-detail {
+		grid-template-columns: 0.7fr 0.5fr 0.5fr 1fr;
+	}
+	.three{grid-column: span 2;}
+	.four, .five {grid-column: span 2;}
+	.alumni-student-one {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+	}
+	.alumni-info-one h4 {padding: 1em 0em;}
+}
+
+@media screen and (min-width:900px) {
+	.idd-student {margin-top: 16%;}
+	.career ul, .career p{
+		list-style-type: none;
+		margin: 0em 3em;
+		padding: 2em 3em;
+	}
+	.career-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1em;
+	}
+	.career-list li {
+		background-color: var(--sh-t);
+		color: var(--bg-on-l);
+		padding: 0.5em;
+		text-align: center;
+		border-radius: 1em;
+	}
+}
+
+@media screen and (min-width:1070px) {
+	.program-detail {grid-template-columns: 0.5fr 0.4fr 1fr 1fr;}
+	.three, .four {grid-column: span 1;}
+	.five {grid-column: span 3;}
+	.bottom-bar {font-size: 100%;}
+}
+
+@media screen and (min-width:1100px) {
+	.idd-student {margin-top: 17%;}
+	.program-detail {
+		grid-template-columns: 0.8fr 0.5fr 1fr 1fr 2fr;}
+		.five {grid-column: span 1;}
+} 
