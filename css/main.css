@@ -15,7 +15,7 @@ html {
   --serif: 'Lora', Georgia, Times, serif;
 }
 
-/**** Apply fonts ****/
+/**** Apply fonts *****/
 header, main, footer{
 	font-family: var(--sans);
 	line-height: 1.5em;
