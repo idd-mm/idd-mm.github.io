@@ -15,7 +15,7 @@ html {
   --serif: 'Lora', Georgia, Times, serif;
 }
 
-/**** Apply fonts *****/
+/**** Apply fonts ****/
 header, main, footer{
 	font-family: var(--sans);
 	line-height: 1.5em;
@@ -277,7 +277,7 @@ h4 {
 .contact-us-info-co-ordinator {padding-bottom: 1em;}
 
 /************* footer ***********/
-footer {
+.bottom-bar {
 	color: var(--bg);
 	font-size: 0.8em;
     background-color: var(--bg-on-d);
